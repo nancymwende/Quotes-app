@@ -1,6 +1,6 @@
-# QuotesApp
+## A Quotes Application, 11th October 2021
+By Ezekiel Kibiego
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
 
