@@ -1,5 +1,8 @@
 ## A Quotes Application, 12th April 2022
-By Nancy Mwende
+By Nancy Mwende.
+
+### Screenshot
+<img src ="src/assets/quotescnshot.png">
 
 
 ## Description
