@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QuoteFormComponent } from './quote-form.component';
 
-describe('', () => {
+describe('QuoteFormComponent', () => {
   let component: QuoteFormComponent;
   let fixture: ComponentFixture<QuoteFormComponent>;
 
