@@ -1,10 +1,15 @@
-<div>
-  <h1>Quotes App</h1>
-  <ul>
-    <li *ngFor='let quote of quotes'>
-      {{quote.name}}
-      <app-quote-detail-component [quote]='quote'></app-quote-detail-component>
-    </li>
+<div class="container mt-5">
+  <h1 class="heading text-dark text-center"><i>Qoutes App</i></h1>
+  <ul >
+    <div *ngFor='let quote of quotes;let i = index'>
+      <li>{{quote.name}}, {{quote.Date|date|uppercase}}</li>
+      <button class="btn bg-secondary text-light" (click)='toggleDetails(i)'>More</button>
+  
+      <app-quote-details-component *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='completeQuote($event,i)'>
+
+      </app-quote-details-component>
+
+    </div>
   </ul>
-  <p *ngIf='quotes.length > 1'>Your quotes are too many</p>
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>
